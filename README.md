@@ -8,8 +8,8 @@ Hive UDF 开发Demo
 5. Hive中创建方法：
 ```sql
 -- 永久创建则删除 TEMPORARY。<函数名称> AS <Java package.类名>
-create TEMPORARY function get_birthday as get_birthday 
-using jar 'hdfs:///user/home/rongfeilong/tmp/hiveudf-test.jar';
+CREATE TEMPORARY FUNCTION get_birthday AS 'get_birthday' 
+USING jar 'hdfs:///user/home/rongfeilong/tmp/hiveudf-test.jar';
 ```
 6. 使用。
 
